@@ -1,0 +1,17 @@
+name: Swift
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run tests
+      run: xcodebuild build test -scheme cosc345 -project cosc345.xcodeproj -destination 'platform=iOS Simulator,OS=14.4,name=iPhone 8'
