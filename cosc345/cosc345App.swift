@@ -30,6 +30,13 @@ public class myclass {
 	return Double(number)
 	}
 
+	/**
+		Call another method
+
+		- Parameters:
+			- number: The integer to cast into the double
+		- Returns: The Double of the Int
+	*/
 	public func another(number:Int) -> Double
 	{
 	return thing(number: 6, second: 5)
