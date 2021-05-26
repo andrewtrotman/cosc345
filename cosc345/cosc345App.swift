@@ -14,7 +14,9 @@ struct cosc345App: App {
             ContentView()
         }
     }
+}
 
+public class myclass {
 	/**
 		Cast an integer to a double
 
