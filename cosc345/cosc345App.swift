@@ -23,12 +23,12 @@ struct cosc345App: App {
 			- second: ignored
 		- Returns: The Double of the Int
 	*/
-	func thing(number:Int, second:Int) -> Double
+	public func thing(number:Int, second:Int) -> Double
 	{
 	return Double(number)
 	}
 
-	func another(number:Int) -> Double
+	public func another(number:Int) -> Double
 	{
 	return thing(number: 6, second: 5)
 	}
