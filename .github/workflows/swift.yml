@@ -16,7 +16,7 @@ jobs:
     - name: Run tests
       run: xcodebuild build test -scheme cosc345 -project cosc345.xcodeproj -destination 'platform=iOS Simulator,OS=14.4,name=iPhone 8'
     - name: Extract Documentation
-		uses: SwiftDocOrg/swift-doc@master
+      uses: SwiftDocOrg/swift-doc@master
         with:
           inputs: "cosc345"
           module-name: MyLibrary
