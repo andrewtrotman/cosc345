@@ -41,4 +41,16 @@ public class myclass {
 	{
 	return thing(number: 6, second: 5)
 	}
+
+	/**
+		Demo methof for COSC345
+
+		- Parameters:
+			- thng: Anything
+		- Returns: 6.4
+	*/
+	public func spam(thng:Int)->Double
+	{
+	return 6.4
+	}
 }
