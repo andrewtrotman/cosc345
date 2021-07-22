@@ -30,7 +30,8 @@ jobs:
          path: "Documentation"
       env:
          GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
-  CoverageJob
+
+  CoverageJob:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
