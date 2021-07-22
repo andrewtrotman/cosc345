@@ -36,8 +36,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Generate Coverage
-      run: xcodebuild test -scheme cosc345 -project cosc345.xcodeproj -destination 'platform=iOS Simulator,OS=14.4,name=iPhone 8' -enableCodeCoverage YES build test
-    - uses: codecov/codecov-action@v2
-      with:
-        verbose: true
-
+      run: |
+        xcodebuild clean test -scheme cosc345 -project cosc345.xcodeproj -destination 'platform=iOS Simulator,OS=14.4,name=iPhone 8' -enableCodeCoverage YES 
+        bash <(curl -s https://codecov.io/bash)
