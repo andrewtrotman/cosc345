@@ -35,7 +35,7 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Generate coverage
+    - name: Generate Coverage
       run: xcodebuild build test -scheme cosc345 -project cosc345.xcodeproj -destination 'platform=iOS Simulator,OS=14.4,name=iPhone 8' -enableCodeCoverage YES | xcpretty -c
     - uses: codecov/codecov-action@v2
       with:
